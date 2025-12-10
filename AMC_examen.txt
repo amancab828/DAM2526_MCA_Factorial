@@ -1,0 +1,91 @@
+    1  history -w
+    2  cd eclipse-workspace
+    3  cd MancillaCabezaAntonio_Factorial
+    4  git init
+    5  git add .
+    6  git commit -m "Versión inicial que pide número y realiza comprobación"
+    7  git branch -M main
+    8  git push -u origin main
+    9  git remote add origin https://github.com/amancab828/DAM2526_MCA_Factorial.git
+   10  git push -u origin main
+   11  ssh -T git@github.com
+   12  git push -u origin main
+   13  git add .
+   14  git commit -m "Versión B: introduzco la función pedirNumero"
+   15  git push
+   16  echo "/bin/" > .gitignore
+   17  git add .
+   18  git commit -m "Versión C: Añado un sysout al final y el archivo .gitignore de java"
+   19  git push
+   20  gt log --oneline
+   21  git log --oneline
+   22  git switch -c factorial_recursivo
+   23  git add .
+   24  git commit -m "Version F1: Añado la funcion factorialRec"
+   25  git add .
+   26  git commit -m "Version F2: Cambio la línea final, mostrando el resultado"
+   27  git add .
+   28  git commit -m "Version F3: Pequeña mejora adicional, añadiendo comentarios"
+   29  git log --oneline --all
+   30  git log --oneline --graph --all
+   31  git log --graph --all
+   32  git add .
+   33  git commit -m "Version F4: Añado la captura"
+   34  git switch main
+   35  git add .
+   36  git commit -m "Version D: Mejora de la funcion pedirNumero"
+   37  git push
+   38  git add .
+   39  git commit -m "Version E: Añado la funcion iterativa de factorialBucle"
+   40  git push
+   41  git add .
+   42  git commit -m "Version F: Cambio la linea final, mostrando el resultado de manera iterativa"
+   43  git log --oneline --graph --all
+   44  git add .
+   45  git commit -m "Version G: Añado captura"
+   46  git push
+   47  git switch factorial_recursivo
+   48  git rebase main
+   49  git status
+   50  git rebase --continue
+   51  git add .
+   52  git rebase --continue
+   53  git add .
+   54  git rebase --continue
+   55  git add .
+   56  git rebase --continue
+   57  git log --oneline --graph --all
+   58  git add .
+   59  git commit -m "Actualizo la rama factorial_recursivo con la rama main haciendo un rebase, corrigo los conflictos. Corrigo la funcion factorialBucle"
+   60  git push -u origin factorial_recursivo
+   61  git add .
+   62  git commit -m "Version F4: Añado otra linea final mostrando proceso completado con el método recursivo"
+   63  git push
+   64  git switch main
+   65  git merge factorial_recursivo
+   66  git push
+   67  git log --oneline
+   68  git reset --hard 19da4b7
+   69  git log --oneline
+   70  git push
+   71  git add .
+   72  git push
+   73  git pull
+   74  git add .
+   75  git push
+   76  git log --oneline
+   77  git reset --hard 19da4b7
+   78  git diff
+   79  git add .
+   80  git push
+   81  git commit -m "Version final, revertiendo la modificación anterior"
+   82  git push
+   83  git diff --cached
+   84  git log --oneline
+   85  git reset --hard 19da4b7
+   86  git revert 19da4b7
+   87  git log --oneline
+   88  git push
+   89  git add .
+   90  git push
+   91  history > AMC_examen.txt

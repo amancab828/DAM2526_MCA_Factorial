@@ -25,6 +25,14 @@ public class Factorial {
 
         return num;
     }
+    
+    private static long factorialBucle(int n) {
+    	int result = 0;
+    	for (int i=n; i>=0; i--) {
+    		result = result + (i*i-1);
+    	}
+    	return result;
+    }
 	
 	public static void main(String[] args) {
 
@@ -37,7 +45,7 @@ public class Factorial {
         }
 
         sc.close();
-        
+
         System.out.println("RESULTADO - En versiones posteriores se calculará el factorial del número " + num);
 	}
 

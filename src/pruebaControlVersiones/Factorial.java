@@ -27,9 +27,9 @@ public class Factorial {
     }
     
     private static long factorialBucle(int n) {
-    	int result = 0;
-    	for (int i=n; i>=0; i--) {
-    		result = result + (i*i-1);
+    	int result = 1;
+    	for (int i=n; i>1; i--) {
+    		result = result + result * (i-1);
     	}
     	return result;
     }
@@ -59,13 +59,11 @@ public class Factorial {
         }
 
         sc.close();
-<<<<<<< HEAD
 
-        System.out.println("RESULTADO - El factorial del número " + num + " es " + factorialBucle(num));
-=======
+        System.out.println("RESULTADO (usando bucles) - El factorial del número " + num + " es " + factorialBucle(num));
         
         System.out.println("RESULTADO - El factorial del número " + num + " es " + factorialRec(num));
->>>>>>> 9f50c70 (Version F2: Cambio la línea final, mostrando el resultado)
+
 	}
 
 }

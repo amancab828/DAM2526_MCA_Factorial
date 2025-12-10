@@ -53,8 +53,13 @@ public class Factorial {
         }
 
         sc.close();
+<<<<<<< HEAD
 
         System.out.println("RESULTADO - El factorial del número " + num + " es " + factorialBucle(num));
+=======
+        
+        System.out.println("RESULTADO - El factorial del número " + num + " es " + factorialRec(num));
+>>>>>>> 9f50c70 (Version F2: Cambio la línea final, mostrando el resultado)
 	}
 
 }
